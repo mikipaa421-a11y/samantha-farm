@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旬の露地野菜セット | サマンサ農園</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Shared styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Serif JP', serif;
+            background-color: #fdfdfd;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        header {
+            padding: 20px 5%;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .back-link:hover {
+            color: #c5a059;
+        }
+
+        .product-header {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 80px;
+            align-items: start;
+        }
+
+        .product-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            letter-spacing: 0.1em;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            color: #c5a059;
+            font-weight: 700;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .product-desc {
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+
+        .btn-buy {
+            display: inline-block;
+            background: #222;
+            color: #fff;
+            padding: 15px 40px;
+            letter-spacing: 0.1em;
+        }
+
+        .btn-buy:hover {
+            background: #c5a059;
+        }
+
+        .specs {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .specs th,
+        .specs td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+
+        .specs th {
+            width: 30%;
+            color: #666;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .product-header {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">サマンサ農園</a>
+        <a href="index.html" class="back-link">← ホームに戻る</a>
+    </header>
+
+    <div class="container">
+        <div class="product-header">
+            <div class="product-image">
+                <img src="images/vegetables.png" alt="旬の野菜セット">
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">旬の露地野菜セット</h1>
+                <span class="product-price">¥3,800 (税込) / 1セット</span>
+                <p class="product-desc">
+                    その日の朝、畑で一番輝いている野菜たちを詰め合わせました。
+                    ハウス栽培ではなく、太陽と風を浴びて育つ「露地栽培」にこだわっています。
+                    野菜本来の味が濃く、シンプルな調理法で食べるのが一番のご馳走になります。
+                    ※季節によって内容は変わります。
+                </p>
+                <table class="specs">
+                    <tr>
+                        <th>内容量</th>
+                        <td>旬の野菜 7〜10品目</td>
+                    </tr>
+                    <tr>
+                        <th>現在のラインナップ例</th>
+                        <td>トマト、ナス、ピーマン、きゅうり、オクラなど</td>
+                    </tr>
+                    <tr>
+                        <th>配送方法</th>
+                        <td>クール便</td>
+                    </tr>
+                </table>
+                <a href="#" class="btn-buy" onclick="alert('デモサイトのため購入機能はありません。'); return false;">カートに入れる</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

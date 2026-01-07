@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>こだわり | サマンサ農園</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles consistent with index.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Noto Serif JP', serif;
+            background-color: #fdfdfd;
+            color: #222;
+            line-height: 2.0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            padding: 30px 5%;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+        }
+
+        .back-link {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .back-link:hover {
+            color: #c5a059;
+        }
+
+        /* Content */
+        .page-header {
+            background: #f9f9f9;
+            padding: 100px 0;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            letter-spacing: 0.2em;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .page-subtitle {
+            font-size: 1rem;
+            color: #666;
+            letter-spacing: 0.1em;
+        }
+
+        .content-block {
+            margin-bottom: 100px;
+        }
+
+        .content-block h3 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            letter-spacing: 0.1em;
+            border-left: 4px solid #c5a059;
+            padding-left: 20px;
+        }
+
+        .content-block p {
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .history-list {
+            list-style: none;
+            border-top: 1px solid #eee;
+        }
+
+        .history-list li {
+            display: flex;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .year {
+            width: 100px;
+            font-weight: 700;
+            color: #c5a059;
+            flex-shrink: 0;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .page-title {
+                font-size: 1.8rem;
+            }
+
+            .history-list li {
+                flex-direction: column;
+            }
+
+            .year {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">サマンサ農園</a>
+        <a href="index.html" class="back-link">← ホームに戻る</a>
+    </header>
+
+    <div class="page-header">
+        <h1 class="page-title">私たちのこだわり</h1>
+        <p class="page-subtitle">Philosophy & History</p>
+    </div>
+
+    <div class="container">
+        <div class="content-block">
+            <h3>「土」を科学する</h3>
+            <p>
+                サマンサ農園の朝は、土を見ることから始まります。<br>
+                しかし、私たちの「見る」は、ただ漠然と眺めることではありません。毎月行う詳細な土壌検査。pH値、窒素・リン酸・カリのバランス、微量要素の含有量。これらを数値として把握し、作物が最もその生命力を発揮できる「最適解」を導き出します。
+            </p>
+            <p>
+                「経験」と「勘」だけに頼る農業から、「データ」と「観察」を融合させた農業へ。<br>
+                それが、私たちが考える現代の有機農業のあり方です。必要な栄養を必要なだけ与えることで、作物は健康に育ち、不自然なエグみのない、素材本来のクリアな味が生まれます。
+            </p>
+            <img src="images/concept.png" alt="土づくりの様子" style="margin-top:40px; border-radius: 4px;">
+        </div>
+
+        <div class="content-block">
+            <h3>農園の歴史</h3>
+            <ul class="history-list">
+                <li>
+                    <span class="year">2020年</span>
+                    <span class="desc">先代から受け継いだ荒廃農地を開墾し、サマンサ農園としての第一歩を踏み出す。土壌改良に着手。</span>
+                </li>
+                <li>
+                    <span class="year">2022年</span>
+                    <span class="desc">独自の土壌分析メソッドを確立。試験栽培した人参が地元の品評会で最高賞を受賞。</span>
+                </li>
+                <li>
+                    <span class="year">2024年</span>
+                    <span class="desc">有機JAS認証を取得。インターネットでの直販を開始し、全国へ「土の恵み」を届け始める。</span>
+                </li>
+                <li>
+                    <span class="year">2026年</span>
+                    <span class="desc">法人化。より多くの方に食の安全と感動を届けるため、新たな挑戦を続けています。</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; 2026 Samantha Farm. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
